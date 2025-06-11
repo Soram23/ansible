@@ -1,7 +1,7 @@
 ---
-- name: Update web servers
+- name: machine ping
   hosts: idealake
     
   tasks:
-  - name: Ping testing
+  - name: I am pinging
     win_ping:
