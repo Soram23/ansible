@@ -1,9 +1,7 @@
 ---
 - name: Update web servers
   hosts: idealake
-  become: true
-  remote_user: root
-
+    
   tasks:
   - name: Ping testing
     win_ping:
