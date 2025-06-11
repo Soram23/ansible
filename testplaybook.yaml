@@ -1,6 +1,7 @@
 ---
 - name: machine ping
   hosts: idealake
+  become_method: runas
     
   tasks:
   - name: I am pinging
