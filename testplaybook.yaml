@@ -1,9 +1,9 @@
 ---
-- name: Update web servers
+- name: machine ping
   hosts: idealake
-  become: true
-  remote_user: root
-
+  become: yes
+  become_method: runas
+    
   tasks:
-  - name: Ping testing
+  - name: I am pinging
     win_ping:
