@@ -5,6 +5,6 @@
 
   tasks:
     - name: Install Apache HTTPD
-      yum:
-        name: apache2
+      dnf:
+        name: httpd
         state: present
