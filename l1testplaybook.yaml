@@ -1,10 +1,10 @@
 ---
 - name: Linux playbook
-  hosts: idealake
+  hosts: linux_node
   become: yes
   
-  task:
-  - name: Install apache httpd  (state=present is optional)
+  tasks:
+  - name: Install Apache HTTPD
     apt:
       name: apache2
       state: present
