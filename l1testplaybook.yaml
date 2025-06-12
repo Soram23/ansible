@@ -1,10 +1,10 @@
 ---
-- name: Linux playbook
+- name: Linux playbook to install Apache
   hosts: linux_node
   become: yes
-  
+
   tasks:
-  - name: Install Apache HTTPD
-    apt:
-      name: apache2
-      state: present
+    - name: Install Apache HTTPD
+      apt:
+        name: apache2
+        state: present
