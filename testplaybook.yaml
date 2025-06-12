@@ -3,6 +3,7 @@
   hosts: idealake
   become: yes
   become_method: runas
+  become_user: prabhakaran_nadar
     
   tasks:
   - name: I am pinging
